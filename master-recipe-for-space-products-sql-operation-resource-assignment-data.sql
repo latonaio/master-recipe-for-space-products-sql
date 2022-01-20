@@ -17,7 +17,7 @@ CREATE TABLE `master_recipe_for_space_products_operation_resource_assignment_dat
     `ValidityEndDate`                     varchar(20) DEFAULT NULL,
     `CreatedDateTime`                     varchar(20) DEFAULT NULL,
     `LastModifiedDateTime`                varchar(20) DEFAULT NULL,     
-    PRIMARY KEY (`Resource`, `SpaceMasterRecipeGroup`, `SpaceMasterRecipe`, `SpaceMasterRecipeInternalVersion`, `SpaceMasterRecipeSequence`, `MstrRcpOperationIntVersion`, `SpaceMasterRecipeOperationIntID`),
+    PRIMARY KEY (`SpaceMasterRecipeGroup`, `SpaceMasterRecipe`, `SpaceMasterRecipeInternalVersion`, `SpaceMasterRecipeSequence`, `MstrRcpOperationIntVersion`, `SpaceMasterRecipeOperationIntID`, `SpaceMasterRecipeOpResourceID, `SpaceMasterRecipeListItem`),
     CONSTRAINT `MasterRecipeForSpaceProductsOperationResourceAssignmentData_fk` FOREIGN KEY (`SpaceMasterRecipeGroup`, `SpaceMasterRecipe`, `SpaceMasterRecipeInternalVersion`) REFERENCES `master_recipe_for_space_products_header_data` (`SpaceMasterRecipeGroup`, `SpaceMasterRecipe`, `SpaceMasterRecipeInternalVersion`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
