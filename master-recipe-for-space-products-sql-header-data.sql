@@ -3,6 +3,7 @@ CREATE TABLE `master_recipe_for_space_products_header_data`
     `SpaceMasterRecipeGroup`           varchar(10) NOT NULL,
     `SpaceMasterRecipe`                varchar(20) NOT NULL,
     `SpaceMasterRecipeInternalVersion` varchar(8) NOT NULL,
+    `SpaceMasterRecipeType`            varchar(10) DEFAULT NULL,
     `SpaceMasterRecipeDescription`     varchar(40) DEFAULT NULL,
     `PlainLongText`                    varchar(255) DEFAULT NULL,
     `BaseCamp`                         varchar(20) DEFAULT NULL,
